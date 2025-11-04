@@ -9,9 +9,11 @@ for b1 in range (b):
   inputs.append(c)
   b1+=1
 if s==1:
-  p = c*math.log2(1/c)
-  print("The entropy is = ",p)
-  r+=p
+  for j in range (len(inputs)):
+      c=inputs[j]
+      p = c*math.log2(1/c)
+      print("The entropy is = ",p)
+      r+=p
 else:
   print("The sum of probabilities should be equal to 1")
 
